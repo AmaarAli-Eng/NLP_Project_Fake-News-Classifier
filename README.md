@@ -7,12 +7,8 @@ This project implements a fake news classifier using machine learning techniques
 - [Introduction](#introduction)
 - [Dataset](#dataset)
 - [Dependencies](#dependencies)
-- [Usage](#usage)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Results](#results)
-- [License](#license)
-- [Contributing](#contributing)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -44,7 +40,19 @@ To run the code in this repository, you will need the following Python libraries
 - `scikit-learn`
 - `google-colab` (if using Google Colab)
 
-You can install these dependencies using `pip`:
+You can install these dependencies using `pip`: pip install nltk pandas numpy scikit-learn
 
-```bash
-pip install nltk pandas numpy scikit-learn
+##  Model Training and Evaluation
+
+The notebook performs the following steps:
+
+- Connecting to Google Drive: (if using Google Colab)
+- Text Preprocessing: Cleans the text by removing non-alphabet characters, converting to lowercase, lemmatizing, and removing stop words.
+- Feature Extraction: Uses TfidfVectorizer to transform the processed text into TF-IDF features.
+- Model Training: Trains a machine learning model on the training data.
+- Evaluation: Evaluates the model using accuracy score, precision, recall, and F1-score.
+
+
+##Results
+
+After running the notebook, you will see various evaluation metrics printed in the output, indicating the performance of the fake news classifier on the dataset.
